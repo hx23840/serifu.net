@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account, credits or a payment
+    url: mailto:support@serifu.net
+    about: Email us. Issues are public, so please don't post account or payment details here.
+  - name: Docs and FAQ
+    url: https://serifu.net/docs
+    about: How to use Serifu, and answers to common questions.

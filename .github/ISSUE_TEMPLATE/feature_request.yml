@@ -1,0 +1,28 @@
+name: Feature request
+description: An idea for Serifu.
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the [roadmap](https://github.com/hx23840/serifu.net/blob/main/ROADMAP.md) and the existing
+        issues first: if someone already asked for it, add a 👍 to theirs.
+  - type: textarea
+    id: need
+    attributes:
+      label: What you want to do
+      description: What you are trying to do, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How it could work
+      description: Your idea, if you have one.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - In the browser on serifu.net
+        - The app

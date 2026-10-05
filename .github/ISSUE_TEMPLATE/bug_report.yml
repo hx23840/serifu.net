@@ -1,0 +1,48 @@
+name: Bug report
+description: Something in Serifu went wrong.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Issues are public: please don't include your email address, order numbers or
+        pages you don't want others to see. For your account, credits or a payment, email support@serifu.net.
+
+        If you use the app, please update it first: the problem may already be fixed.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - In the browser on serifu.net
+        - The app on macOS
+        - The app on Windows
+        - The website (pages, sign-in, pricing)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: If you use the app, e.g. 1.0.14. For the browser, which browser.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: What you did, in order, so we can see it too.
+      placeholder: |
+        1. Opened a volume of ...
+        2. Clicked ...
+        3. ...
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: A screenshot of the page or the message helps a lot. Drag images here.
